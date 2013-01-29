@@ -1,19 +1,19 @@
 Project #1: Collatz
 Date: Wed, 30 Jan 2013, 8pm
 
-Course Name:
+Course Name: CS 327E
 Unique:
 
-First Name:
-Last Name:
-EID:
-E-mail:
+First Name: Micheal
+Last Name: McCaslin
+EID: MTM2275
+E-mail: Taylor4484@gmail.com
 Estimated number of hours:
 Actual    number of hours:
 
-Turnin CS Username:
-GitHub ID:
-GitHub Repository Name:
+Turnin CS Username: Taylor
+GitHub ID: Taylor4484
+GitHub Repository Name: cs327e-collatz
 
 Comments:
 
