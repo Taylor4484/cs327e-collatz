@@ -31,8 +31,6 @@ def collatz_read (r, a) :
 # collatz_eval
 # ------------
 
-
-
 def collatz_eval (i, j) :
     """
     i is the beginning of the range, inclusive
@@ -69,6 +67,7 @@ def collatz_eval (i, j) :
     return max_cycle_length
 
 
+
 # -------------
 # collatz_print
 # -------------
@@ -97,3 +96,32 @@ def collatz_solve (r, w) :
     while collatz_read(r, a) :
         v = collatz_eval(a[0], a[1])
         collatz_print(w, a[0], a[1], v)
+
+
+# ------------------------------
+# projects/collatz/RunCollatz.py
+# Copyright (C) 2013
+# Glenn P. Downing
+# -------------------------------
+
+"""
+To run the program
+    % python RunCollatz.py < RunCollatz.in > RunCollatz.out
+    % chmod ugo+x RunCollatz.py
+    % RunCollatz.py < RunCollatz.in > RunCollatz.out
+
+To document the program
+    % pydoc -w Collatz
+"""
+
+# -------
+# imports
+# -------
+
+import sys
+
+# ----
+# main
+# ----
+
+collatz_solve(sys.stdin, sys.stdout)
