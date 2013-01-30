@@ -82,6 +82,16 @@ class TestCollatz (unittest.TestCase) :
         v = collatz_eval(900, 1000)
         self.assert_(v == 174)
 
+    #revered range
+    def test_eval_5 (self) :
+        v = collatz_eval(10, 1)
+        self.assert_(v == 20)
+    #zero range
+    def test_eval_6 (self) :
+        v = collatz_eval(170, 170)
+        self.assert_(v == 11)
+
+
     # -----
     # print
     # -----
@@ -117,22 +127,22 @@ class TestCollatz (unittest.TestCase) :
         self.assert_(w.getvalue() == "1 10 20\n100 200 125\n201 210 89\n900 1000 174\n")
 
     def test_solve_2 (self) :
-        r = StringIO.StringIO("1 10\n100 200\n201 210\n900 1000\n")
+        r = StringIO.StringIO("1660 5068\n1362 5153\n6636 3965\n3226 5611\n")
         w = StringIO.StringIO()
         collatz_solve(r, w)
-        self.assert_(w.getvalue() == "1 10 20\n100 200 125\n201 210 89\n900 1000 174\n")
+        self.assert_(w.getvalue() == "1660 5068 238\n1362 5153 238\n6636 3965 262\n3226 5611 238\n")
 
     def test_solve_3 (self) :
-        r = StringIO.StringIO("1 10\n100 200\n201 210\n900 1000\n")
+        r = StringIO.StringIO("3842 1200\n3168 2892\n3419 6158\n87 6318\n")
         w = StringIO.StringIO()
         collatz_solve(r, w)
-        self.assert_(w.getvalue() == "1 10 20\n100 200 125\n201 210 89\n900 1000 174\n")
+        self.assert_(w.getvalue() == "3842 1200 238\n3168 2892 217\n3419 6158 238\n87 6318 262\n")
 
     def test_solve_4 (self) :
-        r = StringIO.StringIO("1 10\n100 200\n201 210\n900 1000\n")
+        r = StringIO.StringIO("5881 2389\n9169 9347\n193 2702\n8515 190\n")
         w = StringIO.StringIO()
         collatz_solve(r, w)
-        self.assert_(w.getvalue() == "1 10 20\n100 200 125\n201 210 89\n900 1000 174\n")
+        self.assert_(w.getvalue() == "5881 2389 238\n9169 9347 260\n193 2702 209\n8515 190 262\n")
         
 
 # ----
