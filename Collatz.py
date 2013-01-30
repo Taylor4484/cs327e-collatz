@@ -47,8 +47,9 @@ def collatz_eval (i, j) :
     #fix input range if needed
     if i > j:
         i, j = j, i
+
     
-    for x in range(i, j):
+    for x in range(i, j+1):
         
         count = 1
         

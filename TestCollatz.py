@@ -82,7 +82,7 @@ class TestCollatz (unittest.TestCase) :
         v = collatz_eval(900, 1000)
         self.assert_(v == 174)
 
-    #revered range
+    #reversed range
     def test_eval_5 (self) :
         v = collatz_eval(10, 1)
         self.assert_(v == 20)
