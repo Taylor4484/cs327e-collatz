@@ -1,10 +1,20 @@
-run:
-	RunCollatz.py < RunCollatz.in
+all:
+	make run
+	make test
 
 diff:
-	RunCollatz.py < RunCollatz.in > RunCollatz.tmp
+	./RunCollatz.py < RunCollatz.in > RunCollatz.tmp
 	diff RunCollatz.out RunCollatz.tmp
 	rm RunCollatz.tmp
+
+doc:
+	pydoc -w Collatz
+
+log:
+	git log > Collatz.log
+
+run:
+	RunCollatz.py < RunCollatz.in
 
 test:
 	TestCollatz.py
