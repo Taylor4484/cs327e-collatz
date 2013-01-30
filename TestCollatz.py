@@ -104,7 +104,7 @@ class TestCollatz (unittest.TestCase) :
     def test_print_4 (self) :
         w = StringIO.StringIO()
         collatz_print(w, 900, 1000, 174)
-        self.assert_(w.getvalue() == "900, 1000, 174\n")
+        self.assert_(w.getvalue() == "900 1000 174\n")
         
     # -----
     # solve
