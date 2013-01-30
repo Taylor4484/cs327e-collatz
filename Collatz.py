@@ -55,7 +55,8 @@ def collatz_eval (i, j) :
                 
             else:
                 x = 3 * x + 1
-                
+            
+        #maintain max_cycle_length
         if count > max_cycle_length:
             max_cycle_length = count
     
