@@ -86,6 +86,7 @@ class TestCollatz (unittest.TestCase) :
     def test_eval_5 (self) :
         v = collatz_eval(10, 1)
         self.assert_(v == 20)
+        
     #zero range
     def test_eval_6 (self) :
         v = collatz_eval(170, 170)

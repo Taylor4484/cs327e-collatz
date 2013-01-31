@@ -28,6 +28,27 @@ def collatz_read (r, a) :
     return True
 
 # ------------
+# collatz_cache
+# ------------
+
+#create list cache
+c = [0] * 200000
+
+
+def collatz_cache (x, cl):
+    """
+    Take a given number and store it's cycle length
+    """
+    global c
+
+    if c[x] == 0:
+        c[x] = cl
+        
+    else:
+        return c[x]
+
+
+# ------------
 # collatz_eval
 # ------------
 
@@ -50,18 +71,33 @@ def collatz_eval (i, j) :
 
     
     for x in range(i, j+1):
+
+        global c
         
-        count = 1
-        
-        while x != 1:
+        if c[x] !=0:
+            count = c[x]
+
+        else:
+            count = 1
+            range_number = x
             
-            count += 1
-            
-            if (x % 2) == 0:
-                x = x / 2
+            while x != 1:
                 
-            else:
-                x = 3 * x + 1
+                count += 1
+                
+                if (x % 2) == 0:
+                    x = int( x / 2 )
+
+                    if x < 200000:
+                        if c[x] != 0:
+                            count += c[x]-1
+                            x = 1
+                    
+                else:
+                    x = 3 * x + 1
+                    
+            collatz_cache(range_number, count)
+
             
         #maintain max_cycle_length
         if count > max_cycle_length:
