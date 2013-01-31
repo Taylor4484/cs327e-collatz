@@ -1,0 +1,96 @@
+commit 968acfda49664996e8d1a437adf03355b369241b
+Author: Taylor McCaslin <Taylor4484@gmail.com>
+Date:   Wed Jan 30 19:21:51 2013 -0600
+
+    Updated error in makefile
+
+commit e704c7e6d0498d5afb52413b7430af9e6ffa7c9b
+Author: Taylor McCaslin <Taylor4484@gmail.com>
+Date:   Wed Jan 30 19:20:31 2013 -0600
+
+    Added CS username
+
+commit cc44ce693e4b31366028bfced8e06c22869bb619
+Author: Taylor McCaslin <Taylor4484@gmail.com>
+Date:   Wed Jan 30 19:08:26 2013 -0600
+
+    1000 Acceptance Tests
+
+commit 9b5678d1a88b9ceaca43f4b3431d294ed2acc472
+Author: Taylor McCaslin <Taylor4484@gmail.com>
+Date:   Wed Jan 30 18:36:02 2013 -0600
+
+    Implemented Cache, Sphere Accepted
+
+commit fcc8662cd497c20bcc7d7b62cf1dea126ccbb90a
+Author: Taylor McCaslin <Taylor4484@gmail.com>
+Date:   Wed Jan 30 12:20:00 2013 -0600
+
+    Fixed issue if range was zero
+    
+    Bugfix, cleared test
+
+commit 0e85044438a2345d8f00df8e021634a91baefbbc
+Author: Taylor McCaslin <Taylor4484@gmail.com>
+Date:   Wed Jan 30 01:07:20 2013 -0600
+
+    updated to new makefile
+    
+    provided by Professor Downing
+
+commit f968b48df97b85d0e664d4d9147628685c92ae00
+Author: Taylor McCaslin <Taylor4484@gmail.com>
+Date:   Wed Jan 30 01:06:18 2013 -0600
+
+    Added corner unit test cases
+    
+    Rewrote test_solve unit tests and added test for reversed range and
+    zero range in test_eval 5 and 6
+
+commit fa539c95fcdea68cc74c343f5123a5702f170f7d
+Author: Taylor McCaslin <Taylor4484@gmail.com>
+Date:   Wed Jan 30 00:26:57 2013 -0600
+
+    Removed extrainous asserts and added range validator
+
+commit 752e4168e021302e7e98d1f0c8d26d95ae3e7e8d
+Author: Taylor McCaslin <Taylor4484@gmail.com>
+Date:   Tue Jan 29 23:35:33 2013 -0600
+
+    Ran TestCollatz & pass all
+
+commit b62de51dce5267e431f1f4b8f827a91c39b13811
+Author: Taylor McCaslin <Taylor4484@gmail.com>
+Date:   Tue Jan 29 23:23:41 2013 -0600
+
+    Created initial collatz_eval, and tested
+
+commit dc3e419b49f98484865038c042eb7670b6d18305
+Author: Taylor McCaslin <Taylor4484@gmail.com>
+Date:   Tue Jan 29 19:37:46 2013 -0600
+
+    Added Unit Tests
+    
+    Included 4 unit tests for each function based on sphere demo data
+
+commit cfc13694a7d38e4d2aabc6c03969f198b7d6543a
+Author: Taylor McCaslin <Taylor4484@gmail.com>
+Date:   Tue Jan 29 12:14:33 2013 -0600
+
+    Updated readme and gitignore
+    
+    ignore .DS_Store
+
+commit 539b854f8c99886aef0cb0b9e403dd71b3c45ac0
+Author: Taylor McCaslin <Taylor4484@gmail.com>
+Date:   Tue Jan 29 11:53:14 2013 -0600
+
+    Initial File Commit
+    
+    Adding instructor provided files
+
+commit 215168746744362956471aafd4e9436b2f3f6012
+Author: Taylor McCaslin <Taylor4484@gmail.com>
+Date:   Sat Jan 26 13:53:44 2013 -0800
+
+    Initial commit

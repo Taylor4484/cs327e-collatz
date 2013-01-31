@@ -2,14 +2,14 @@ Project #1: Collatz
 Date: Wed, 30 Jan 2013, 8pm
 
 Course Name: CS 327E
-Unique:
+Unique: 53355
 
 First Name: Micheal
 Last Name: McCaslin
 EID: MTM2275
 E-mail: Taylor4484@gmail.com
-Estimated number of hours:
-Actual    number of hours:
+Estimated number of hours: 10
+Actual    number of hours: 20
 
 Turnin CS Username: Taylor
 GitHub ID: Taylor4484

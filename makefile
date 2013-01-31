@@ -19,6 +19,11 @@ run:
 test:
 	TestCollatz.py
 
+zip:
+	zip -r Collatz.zip README.txt makefile Collatz.html Collatz.log Collatz.py \
+	RunCollatz.in RunCollatz.out RunCollatz.py SphereCollatz.py \
+	TestCollatz.py TestCollatz.out
+
 turnin-list:
 	turnin --list hychyc07 cs327epj1
 
@@ -28,10 +33,7 @@ turnin-submit:
 turnin-verify:
 	turnin --verify hychyc07 cs327epj1
 
-zip:
-	zip -r Collatz.zip README.txt makefile Collatz.html Collatz.log Collatz.py \
-	RunCollatz.in RunCollatz.out RunCollatz.py SphereCollatz.py \
-	TestCollatz.py TestCollatz.out
+
 
 clean:
 	rm -f *.pyc
